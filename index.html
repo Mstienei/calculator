@@ -3,19 +3,56 @@
    <head>
       <title>Calculator</title>
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-      <link href="#css/styles.css" rel="stylesheet" type="text/css">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
       <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script src="js/scripts.js"></script>
    </head>
    <body>
       <div class="container">
-        <h1>Calculator</h1>
-        <form id="add">
-           <div class="form-group"> <label for="add1">1st number:</label> <input id="add1" class="form-control" type="text"> </div>
-           <div class="form-group"> <label for="add2">2nd number:</label> <input id="add2" class="form-control" type="text"> </div>
-           <button type="submit" class="btn">Add!</button>
-        </form>
+        <div class="jumbotron">
+          <h1 class="display-4">Simple Calculator</h1>
+          <p class="lead">This is a simple calculator that takes in two numbers and perform basic operations on them.</p>
+          <hr class="my-4">
+          <div class="row">
+            <div class="col">
+              <form id="add">
+                <p>Add</p>
+                 <div class="form-group"> <input id="add1" class="form-control" type="text" placeholder="1st number"> </div>
+                 <div class="form-group"> <input id="add2" class="form-control" type="text" placeholder="2nd number"> </div>
+                 <button type="submit" class="btn btn-primary btn-lg">Add</button>
+              </form>
+            </div>
+            <div class="col">
+              <form id="subtract">
+                <p>Subtract</p>
+                 <div class="form-group"> <input id="subtract1" class="form-control" type="text" placeholder="1st number"> </div>
+                 <div class="form-group"> <input id="subtract2" class="form-control" type="text" placeholder="2nd number"> </div>
+                 <button type="submit" class="btn btn-primary btn-lg">Subtract</button>
+              </form>
+            </div>
+            <div class="col">
+              <form id="multiply">
+                <p>Multiply</p>
+                 <div class="form-group"> <input id="multiply1" class="form-control" type="text" placeholder="1st number"> </div>
+                 <div class="form-group"> <input id="multiply2" class="form-control" type="text" placeholder="2nd number"> </div>
+                 <button type="submit" class="btn btn-primary btn-lg">Multiply</button>
+              </form>
+            </div>
+            <div class="col">
+              <form id="divide">
+                <p>Divide</p>
+                 <div class="form-group"> <input id="Divide1" class="form-control" type="text" placeholder="1st number"> </div>
+                 <div class="form-group"> <input id="Divide2" class="form-control" type="text" placeholder="2nd number"> </div>
+                 <button type="submit" class="btn btn-primary btn-lg">Divide</button>
+              </form>
+            </div>
+          </div>
           <div id="output"> </div>
+          <hr class="my-4">
+          <div class="footer text-muted">
+            &copy;Sitienei  Basic Calculator 2020
+          </div>
+        </div>
       </div>
    </body>
 </html>
